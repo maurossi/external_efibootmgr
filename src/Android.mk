@@ -21,6 +21,7 @@ LOCAL_MODULE_PATH := $(TARGET_INSTALLER_OUT)/sbin
 
 LOCAL_CFLAGS := \
 	-Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing \
+	-Wno-implicit-function-declaration \
 	-D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE \
 	-DEFIBOOTMGR_VERSION="\"$(VERSION)\"" \
 	-DDEFAULT_LOADER=\"\\\\elilo.efi\"
